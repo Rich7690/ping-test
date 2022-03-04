@@ -1,0 +1,18 @@
+logLevel: debug
+endpoints:
+  - url: google.com
+  - url: 1.1.1.1
+  - url: github.com
+targets:
+  - 8.8.8.8
+  - 8.8.4.4
+  - google.com
+  - 1.1.1.1
+  - 1.0.0.1
+
+
+ping:
+  interval: 5s
+  timeout: 3s
+  history-size: 42
+  payload-size: 120

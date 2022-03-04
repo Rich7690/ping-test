@@ -1,0 +1,20 @@
+name: Build and push container
+on: [push]
+
+env:
+  REGISTRY_USER: ${{ github.actor }}
+  REGISTRY_PASSWORD: ${{ github.token }}
+  DOCKER: docker
+
+jobs:
+  Build-And-Push-Container:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: Log in to ghcr.io
+        run: |
+          docker login ghcr.io/rtdev7690 -u ${{ env.REGISTRY_USER }} -p ${{ env.REGISTRY_PASSWORD }}
+      - name: Build and push container
+        run: |
+          make docker-build
