@@ -5,4 +5,4 @@ The data is then exporter prometheus style on `/metrics`. By default listens on 
 
 This application is packaged as a container you can run via docker, kubernetes, or anything else that accepts these kinds of containers:
 
-`docker pull ghcr.io/rtdev7690/ping-test:latest`
+`docker pull ghcr.io/rich7690/ping-test:latest`

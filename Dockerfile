@@ -1,6 +1,6 @@
 # We'll choose the incredibly lightweight
 # Go alpine image to work with
-FROM docker.io/golang:1.17-alpine3.14 AS builder
+FROM docker.io/golang:1.18-alpine3.14 AS builder
 
 # We create an /app directory in which
 # we'll put all of our project code

@@ -14,4 +14,4 @@ clean:
 install:
 	sudo cp ./ping-test /usr/local/bin/ping-test && chmod 755 /usr/local/bin/ping-test
 docker-build:
-	$(DOCKER)  build -t ghcr.io/rtdev7690/ping-test:latest . && $(DOCKER) push ghcr.io/rtdev7690/ping-test:latest
+	$(DOCKER)  build -t ghcr.io/rich7690/ping-test:latest . && $(DOCKER) push ghcr.io/rich7690/ping-test:latest
